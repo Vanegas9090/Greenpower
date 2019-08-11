@@ -1,0 +1,188 @@
+* {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plex';
+}
+
+@font-face {
+    font-family: 'Plex';
+    src: url('../Assets/Fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*LOADER*/
+.loading {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid rgb(0, 166, 80);
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*CONTENT*/
+.contenedor {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.pantalla {
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.75;
+}
+
+.img-cont {
+    z-index: -2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url('../Assets/Images/Banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo>img {
+    height: 160px;
+    width: 430px;
+}
+
+.message {
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.message h1 {
+    font-size: 40px;
+}
+
+.message p {
+    text-align: justify;
+    font-size: 25px;
+}
+
+/*TIMER*/
+
+.Countdown {
+    position: relative;
+    text-align: center;
+    padding: 25px;
+}
+
+.Countdown .numbers {
+    font-style: normal;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    margin: 3px;
+}
+
+.Countdown .number {
+    font-size: 40px;
+}
+
+.Countdown .type {
+    font-size: 20px;
+}
+
+.Countdown .cont {
+    margin: 5px;
+}
+
+/*Mobile design*/
+@media screen and (max-width: 800px) {
+    .numbers {
+        width: 40%;
+    }
+
+    .message {
+        color: #fff;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    .message h1 {
+        font-size: 8vw;
+    }
+
+    .message p {
+        font-size: 4vw;
+    }
+
+    .Countdown .number {
+        font-size: 8vw;
+    }
+
+    .Countdown .type {
+        font-size: 4vw;
+    }
+
+
+    .logo>img {
+        width: 75%;
+        height: auto;
+        max-height: 190px;
+        min-height: 25px;
+        min-width: 130px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Green Power</title>
+    <link rel="stylesheet" href="Css/Maintenance.css">
+    <link rel="shortcut icon" href="Assets/Images/Imagen.png" type="image/x-icon">
+    <script src="Js/Jquery.js"></script>
+    <script src="Js/Maintenance.js"></script>
+</head>
+
+<body onload="timer();loading(event);">
+    <div id="loading" class="loading">
+        <div class="loader"></div>
+    </div>
+    <div class="pantalla"></div>
+    <div class="img-cont"></div>
+
+    <div class="contenedor">
+
+    <div class="logo">
+        <img src="Assets/Images/logo-color.png" alt="" srcset="">
+    </div>
+
+    <div class="message">
+        <h1>PROXIMAMENTE</h1>
+        <p>Este sitio esta en mantenimiento disculpe las molestias, vis&iacute;tanos pronto.</p>
+    </div>
+
+    <div class="Countdown" id="countdown">
+        <div class="numbers">
+            <b>
+                <div class="cont number" id="days">00</div>
+                <div class="cont type"><b>D&iacute;as</div>
+            </b>
+        </div>
+        <div class="numbers">
+            <b>
+                <div class="cont number" id="hours">00</div>
+                <div class="cont type"><b>Horas</div>
+            </b>
+        </div>
+        <div class="numbers">
+            <b>
+                <div class="cont number" id="minutes">00</div>
+                <div class="cont type"><b>Minutos</div>
+            </b>
+        </div>
+        <div class="numbers">
+            <b>
+                <div class="cont number" id="seconds">00</div>
+                <div class="cont type"><b>Segundos</div>
+            </b>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
