@@ -1,0 +1,28 @@
+.NavBar {
+    position: relative;
+    height: 60px;
+}
+
+.NavBar>ul, .NavBar>ul>li>ul {
+    list-style-type: none;
+}
+
+.NavBar a.Option {
+    font-size: 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    max-height: 60px;
+    min-height: 60px;
+    float: right;
+    padding: 20px;
+    justify-content: center;
+}
+
+.NavBar .MenuLogo {
+    display: block;
+    float: left;
+    height: 60px;
+    padding: 8px;
+    transform: translateX(25px);
+}
