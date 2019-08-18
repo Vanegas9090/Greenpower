@@ -41,10 +41,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 500px;
-    background-image: url('../Assets/Images/Banner.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgba(0, 136, 52);
 }
 
 .Contenedor.Nosotros {
@@ -55,7 +52,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 5%;
+    padding: 4%;
 }
 
 .Contenedor.Proyectos {
@@ -68,6 +65,12 @@ body {
     background-color: rgb(0, 136, 51);
 }
 
+.Contenedor.Contacto {
+    padding: 55px;
+    background-color: black;
+    min-height: 300px;
+}
+
 .Contenedor .PantallaNosotros {
     position: absolute;
     width: 100%;
@@ -76,19 +79,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Contenedor .PantallaVerde {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    min-height: 500px;
-    background-color: rgb(0, 136, 51, 1);
-}
-
 .Contenedor .Pantalla {
     position: absolute;
     width: 100%;
-    height: auto;
-    min-height: 700px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -124,8 +118,71 @@ h3.NosotrosTitulos {
     font-size: 2vw;
 }
 
+h1.NosotrosTitulos, h3.NosotrosTitulos {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+h2.ProductosSubtitulos {
+    color: white;
+    font-size: 2.5vw;
+    margin-top: 25px;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: left;
+    width: 80%;
+    padding: 25px;
+}
+
 .ProductosTitulos {
     color: white;
+    margin-bottom: 25px;
+}
+
+.Productos .Producto {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding: 25px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.Producto .Descripcion, .Producto .ImagenProd {
+    position: relative;
+    padding: 25px;
+}
+
+.Producto .Descripcion {
+    width: 65%;
+}
+
+.Producto .ImagenProd {
+    width: 35%;
+}
+
+.ImagenProd img {
+    width: 100%;
+    height: auto;
+}
+
+.Caracteristicas, .Name {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Name {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.Caracteristicas {
+    text-align: justify;
+    font-size: 1.2vw;
 }
 
 .ProyectosTitulos {
@@ -140,18 +197,51 @@ h3.NosotrosTitulos {
 .ContProyectos {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: auto;
-    background-color: green;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .ContProyectos .Proyecto {
-    width: 25%;
-    height: auto;
-    max-height: 300px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.ContProyectos .Proyecto img, .ContProyectos .Proyecto .Info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ContProyectos .Proyecto:hover .Info {
+    opacity: 1;
+    cursor: default;
+}
+
+.ContProyectos .Proyecto .Info {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    -o-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.Proyecto .Info .NombreProyecto {
+    font-size: 1.3vw;
+    margin: 15px;
+}
+
+.Proyecto .Info .DescProyecto {
+    font-size: 1vw;
+    margin: 25px;
+    text-align: justify;
 }
 
 /*Forms*/

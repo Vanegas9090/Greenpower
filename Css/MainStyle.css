@@ -1,0 +1,351 @@
+* {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plex';
+}
+
+@font-face {
+    font-family: 'Plex';
+    src: url('../Assets/Fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*LOGO*/
+.MainLogo {
+    width: 50%;
+    height: auto;
+    transform: translateY(-100px);
+}
+
+/*CONTENEDORES*/
+.Contenedor {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Contenedor.Grande {
+    min-height: 700px;
+}
+
+.Contenedor.Mediano {
+    min-height: 400px;
+}
+
+.Contenedor.FondoImg {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Contenido {
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenido, .Contenido2, .Producto, .InfoContacto, .Social {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.Contenido2 {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.Informacion {
+    width: 80%;
+    height: auto;
+    padding: 50px;
+}
+
+
+/*CONTENIDO*/
+.Social img {
+    height: 64px;
+    width: 64px;
+    padding: 3px;
+}
+
+.InfoContacto .Seccion {
+    min-height: 300px;
+    width: 50%;
+    color: white;
+}
+
+.Producto, .InfoContacto {
+    position: relative;
+    min-height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Producto .Imagen, .Producto .Informacion {
+    min-height: 300px;
+}
+
+.Producto .Imagen {
+    text-align: center; 
+    width: 40%;
+}
+
+.Producto .Imagen img {
+    width: 80%;
+    height: auto;
+    transform: translateY(50px);
+}
+
+.Producto .Informacion {
+    text-align: left;
+    width: 60%;
+}
+
+.Producto .Informacion .Caracteristicas {
+    font-size: 1.3vw;
+}
+
+.Producto .Informacion.Blanco {
+    color: white;
+}
+
+.Producto .Informacion.Verde {
+    color: rgb(0, 136, 51);
+}
+
+.Proyecto {
+    position: relative;
+    width: 25%;
+    min-width: 225px;
+    max-width: 250px;
+    height: 225px;
+}
+
+.Proyecto:hover .Info {
+    opacity: 1;
+    cursor: default;
+}
+
+.Proyecto > .Info, .Proyecto > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.Proyecto > .Info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    opacity: 0;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.Proyecto > .Info p {
+    margin: 10px;
+}
+
+.Proyecto > .Info p.NombreProy {
+    font-size: 1.8vw;
+}
+
+.Proyecto > .Info p.DescProy {
+    font-size: 1.4  vw;
+}
+
+/*contenedores individuales*/
+.Contenedor.Grande > .Contenido {
+    min-height: 700px;
+}
+
+.Contenedor.Mediano > .Contenido {
+    min-height: 400px;
+}
+
+.Contenedor.Principal {
+    background-image: url("../Assets/Images/Fondos/Banner.jpg");
+}
+
+.Contenedor.Calculadora {
+    background-color: rgb(0, 136, 51);
+}
+
+.Contenedor.Nosotros {
+    background-image: url("../Assets/Images/Fondos/paneles2.jpg");
+}
+
+.Contenedor.Productos {
+    background-color: #eee;
+}
+
+.Contenedor.Servicios {
+    background-color: rgb(0, 136, 51);
+}
+
+.Contenedor.Contacto {
+    background-color: rgb(0, 0, 0);
+}
+
+/*PANTALLAS*/
+.Pantalla {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Pantalla.Negra {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*TITULOS*/
+.Titulo {
+    padding-bottom: 50px;
+}
+
+.Titulo.Centro {
+    text-align: center;
+}
+
+.Titulo.Grande {
+    font-size: 3.5vw;
+}
+
+.Titulo.Mediano {
+    font-size: 2.5vw;
+}
+
+.Titulo.Small, .Datos {
+    font-size: 1.8vw;
+}
+
+.Titulo.Blanco {
+    color: white;
+}
+
+.Titulo.Verde {
+    color: rgb(0, 136, 51);
+}
+
+.Datos {
+    margin-bottom: 15px;
+}
+
+/*FORMULARIOS*/
+.DatosContacto, .Formulario {
+    margin: auto;
+    display: block;
+    height: auto;
+    min-height: 100px;
+    padding: 25px;
+}
+
+.Formulario.Calculadora input, .Formulario.Calculadora select {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Formulario.Calculadora {
+    border: 2px solid white;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+.Formulario input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.Formulario.Calculadora select {
+    width: 100%;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    padding: 10px 25px;
+}
+
+.Formulario.Calculadora select, .Formulario input[type="text"], textarea {
+    background-color: white;
+    border: none;
+    font-size: 1.3vw;
+}
+
+.Formulario.FormContacto input[type="text"], .Formulario.FormContacto textarea {
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+/*BOTONES E INPUTS*/
+.Boton {
+    width: 20%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 1.3vw;
+    text-decoration: none;
+    -moz-transition: background-color 1s, color 1s;
+    -o-transition: background-color 1s, color 1s;
+    -webkit-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
+}
+
+.Boton.FormSeccion {
+    width: 40% !important;
+}
+
+.Boton.Blanco {
+    color: white;
+    border: 2px solid white;
+}
+
+.Boton.Blanco:hover {
+    background-color: white;
+}
+
+.Boton.Verde {
+    color: rgb(0, 136, 51);
+    border: 2px solid rgb(0, 136, 51);
+}
+
+.Boton.Verde:hover {
+    background-color: rgb(0, 136, 51);
+}
+
+.Boton.TVerde:hover {
+    color: rgb(0, 136, 51);
+}
+
+.Boton.TNegro:hover {
+    color: rgb(0, 0, 0);
+}
+
+.Boton.TBlanco:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*OTROS*/
+.Separador {
+    width: 5%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.Separador.Blanco {
+    border: 2px solid white;
+}

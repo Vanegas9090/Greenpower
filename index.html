@@ -6,84 +6,378 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Green Power</title>
-    <link rel="shortcut icon" href="Assets/Images/Imagen.png" type="image/x-icon">
-    <link rel="stylesheet" href="Css/GeneralStyle.css">
+    <title>Bienvenido | Green Power</title>
+    <link rel="shortcut icon" href="Assets/Images/Logos/Imagen.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/MainStyle.css">
     <link rel="stylesheet" href="Css/MenuStyle.css">
+    <script src="Js/Jquery.js"></script>
+    <script src="Js/Functions.js"></script>
 </head>
 
-<body ondragstart="return false;">
-    <div class="Contenedor Principal">
-        <div class="Pantalla"></div>
+<body>
+    <div class="Contenedor Grande FondoImg Principal" id="Inicio">
+        <div class="Pantalla Negra"></div>
+
+        <div id="NavBar" class="NavBar">
+            <ul>
+                <li>
+                    <img src="Assets/Images/Imagen.png" class="MenuLogo">
+
+                    <ul class="SlideContent">
+                        <li><a href="#Contacto" class="Option">Contacto</a></li>
+                        <li><a href="#Servicios" class="Option">Servicios</a></li>
+                        <li><a href="#Productos" class="Option">Productos</a></li>
+                        <li><a href="#Proyectos" class="Option">Proyectos</a></li>
+                        <li><a href="#Nosotros" class="Option">¿Qui&eacute;nes somos?</a></li>
+                        <li><a href="#Inicio" class="Option">Inicio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
         <div class="Contenido">
-            <div id="NavBar" class="NavBar">
-                <ul>
-                    <li>
-                        <img src="Assets/Images/Imagen.png" class="MenuLogo">
+            <img src="Assets/Images/Logos/Green-Power-Logo-White.svg" class="MainLogo">
+        </div>
+    </div>
 
-                        <ul class="SlideContent">
-                            <li><a href="#" class="Option">Contacto</a></li>
-                            <li><a href="#" class="Option">Servicios</a></li>
-                            <li><a href="#" class="Option">Productos</a></li>
-                            <li><a href="#" class="Option">Proyectos</a></li>
-                            <li><a href="#" class="Option">¿Qui&eacute;nes somos?</a></li>
-                            <li><a href="#" class="Option">Inicio</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+    <div class="Contenedor Mediano Calculadora" id="Calculadora">
+        <div class="Contenido">
+            <div class="Informacion">
+                <p class="Titulo Mediano Blanco Centro">
+                    Calculadora solar
+                </p>
 
-            <div class="MainLogo">
-                <img src="Assets/Images/logo-white.png" class="Logo">
+                <div class="Formulario Calculadora">
+                    <input type="text"
+                        placeholder="Consumo promedio de energ&iacute;a en los &uacute;ltimos seis meses">
+
+                    <select id="SelectDepto">
+                        <option value="">Departamento</option>
+                        <option value="">Santa Ana</option>
+                        <option value="">San Salvador</option>
+                        <option value="">Sonsonate</option>
+                        <option value="">Ahuachap&aacute;n</option>
+                        <option value="">La Libertad</option>
+                        <option value="">Caba&ntilde;as</option>
+                        <option value="">Cuscatl&aacute;n</option>
+                        <option value="">Moraz&aacute;n</option>
+                        <option value="">San Vicente</option>
+                        <option value="">La Paz</option>
+                        <option value="">La Uni&oacute;n</option>
+                        <option value="">Chalatenango</option>
+                        <option value="">San Miguel</option>
+                        <option value="">Usulut&aacute;n</option>
+                    </select>
+
+                    <select id="SelectDistrib">
+                        <option value="">Distribuidora</option>
+                        <option value="">ABRUZZO</option>
+                        <option value="">B&D</option>
+                        <option value="">DELSUR</option>
+                        <option value="">CAESS</option>
+                        <option value="">CLESA</option>
+                        <option value="">DEUSEM</option>
+                        <option value="">EDESAL</option>
+                        <option value="">EEO</option>
+                    </select>
+                </div>
+
+                <a href="" class="Boton Blanco TVerde">Calcular</a>
             </div>
         </div>
     </div>
 
-    <div class="Contenedor Calculadora">
-        <div class="PantallaVerde"></div>
+    <div class="Contenedor Mediano FondoImg Nosotros" id="Nosotros">
+        <div class="Pantalla Negra"></div>
 
         <div class="Contenido">
-            <p class="TitleCalc">¿Te gustar&iacute;a saber cuantos ahorras?</p>
+            <div class="Informacion">
+                <p class="Titulo Mediano Blanco Centro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
 
-            <div class="FormularioCalc">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-            </div>
+                <hr class="Separador Blanco">
 
-            <button class="btnCalc"><b>Calcular</b></button>
-        </div>
-    </div>
+                <p class="Titulo Small Blanco Centro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
+                    laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
+                    voluptatem quas quo.
+                </p>
 
-    <div class="Contenedor Nosotros">
-        <div class="PantallaNosotros"></div>
-
-        <div class="Contenido">
-            <h1 class="NosotrosTitulos">¿QUI&Eacute;NES SOMOS?</h1>
-            <hr class="Separador">
-            <h3 class="NosotrosTitulos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum, officiis
-                eos assumenda, unde quo
-                beatae, minus quaerat dolorem obcaecati et fuga omnis cum consectetur nihil? Aut maxime ex a?</h3>
-        </div>
-    </div>
-
-    <div class="Contenedor Proyectos">
-        <div class="Contenido">
-            <h1 class="ProyectosTitulos">NUESTROS PROYECTOS</h1>
-
-            <div class="ContProyectos">
-                <img src="Assets/Images/proyecto1.jpg" alt="" class="Proyecto">
-                <img src="Assets/Images/proyecto2.jpg" alt="" class="Proyecto">
-                <img src="Assets/Images/proyecto3.jpg" alt="" class="Proyecto">
-                <img src="Assets/Images/proyecto4.jpg" alt="" class="Proyecto">
+                <a href="#Contacto" class="Boton Blanco TNegro">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
 
-    <div class="Contenedor Productos">
+    <div class="Contenedor Mediano Proyectos" id="Proyectos">
         <div class="Contenido">
-            <h1 class="ProductosTitulos">NUESTROS PRODUCTOS</h1>
+            <div class="Informacion">
+                <p class="Titulo Grande Verde Centro">
+                    Nuestros Proyectos
+                </p>
+
+                <div class="Contenido2 Proyectos">
+                    <div class="Proyecto">
+                        <img src="Assets/Images/Proyectos/proyecto1.jpg" alt="">
+                        <div class="Info">
+                            <p class="NombreProy">Nombre Proyecto</p>
+                            <p class="DescProy">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Proyecto">
+                        <img src="Assets/Images/Proyectos/proyecto2.jpg" alt="">
+                        <div class="Info">
+                            <p class="NombreProy">Nombre Proyecto</p>
+                            <p class="DescProy">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Proyecto">
+                        <img src="Assets/Images/Proyectos/proyecto3.jpg" alt="">
+                        <div class="Info">
+                            <p class="NombreProy">Nombre Proyecto</p>
+                            <p class="DescProy">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Proyecto">
+                        <img src="Assets/Images/Proyectos/proyecto4.jpg" alt="">
+                        <div class="Info">
+                            <p class="NombreProy">Nombre Proyecto</p>
+                            <p class="DescProy">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, incidunt quo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="Titulo Small Verde Centro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
+                    laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
+                    voluptatem quas quo.
+                </p>
+
+                <a href="#Contacto" class="Boton Verde TBlanco">Cont&aacute;ctanos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Contenedor Grande Productos" id="Productos">
+        <div class="Contenido">
+            <div class="Informacion">
+                <p class="Titulo Grande Verde Centro">
+                    Nuestros Productos
+                </p>
+
+                <p class="Titulo Small Verde Centro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
+                    laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
+                    voluptatem quas quo.
+                </p>
+
+                <div class="Producto">
+                    <div class="Informacion Verde">
+                        <p class="Titulo Small">Eagle 72P</p>
+                        <p>
+                            <ul class="Caracteristicas">
+                                <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
+                                    eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
+                                    perfecta
+                                    para la instalación en el techo.</li>
+                                <li>El módulo policristalino de 72 celdas logra una potencia de salida de hasta 340 Wp.
+                                </li>
+                                <li>Los módulos Eagle pasan la prueba PID, la degradación de potencia limitada por la
+                                    prueba
+                                    PID está garantizada para la producción en masa.</li>
+                                <li>El vidrio avanzado y la textura de la superficie permiten un excelente rendimiento
+                                    en
+                                    entornos con poca luz.</li>
+                                <li>Certificado para soportar: carga de viento (2400 Pascal) y carga de nieve (5400
+                                    Pascal).
+                                </li>
+                                <li>Alta resistencia a la niebla salina y al amoníaco certificada por TÜV NORD</li>
+                                <li>El coeficiente de temperatura mejorado disminuye la pérdida de potencia durante
+                                    altas
+                                    temperaturas.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
+                    </div>
+                </div>
+
+                <div class="Producto">
+                    <div class="Imagen">
+                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
+                    </div>
+                    <div class="Informacion Verde">
+                        <p class="Titulo Small">Eagle 72P</p>
+                        <p>
+                            <ul class="Caracteristicas">
+                                <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
+                                    eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
+                                    perfecta
+                                    para la instalación en el techo.</li>
+                                <li>El módulo policristalino de 72 celdas logra una potencia de salida de hasta 340 Wp.
+                                </li>
+                                <li>Los módulos Eagle pasan la prueba PID, la degradación de potencia limitada por la
+                                    prueba
+                                    PID está garantizada para la producción en masa.</li>
+                                <li>El vidrio avanzado y la textura de la superficie permiten un excelente rendimiento
+                                    en
+                                    entornos con poca luz.</li>
+                                <li>Certificado para soportar: carga de viento (2400 Pascal) y carga de nieve (5400
+                                    Pascal).
+                                </li>
+                                <li>Alta resistencia a la niebla salina y al amoníaco certificada por TÜV NORD</li>
+                                <li>El coeficiente de temperatura mejorado disminuye la pérdida de potencia durante
+                                    altas
+                                    temperaturas.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#Contacto" class="Boton Verde TBlanco">Cont&aacute;ctanos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Contenedor Grande Servicios" id="Servicios">
+        <div class="Contenido">
+            <div class="Informacion">
+                <p class="Titulo Grande Blanco Centro">
+                    Nuestros Servicios
+                </p>
+
+                <p class="Titulo Small Blanco Centro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
+                    laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
+                    voluptatem quas quo.
+                </p>
+
+                <div class="Producto">
+                    <div class="Informacion Blanco">
+                        <p class="Titulo Small">Eagle 72P</p>
+                        <p>
+                            <ul class="Caracteristicas">
+                                <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
+                                    eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
+                                    perfecta
+                                    para la instalación en el techo.</li>
+                                <li>El módulo policristalino de 72 celdas logra una potencia de salida de hasta 340 Wp.
+                                </li>
+                                <li>Los módulos Eagle pasan la prueba PID, la degradación de potencia limitada por la
+                                    prueba
+                                    PID está garantizada para la producción en masa.</li>
+                                <li>El vidrio avanzado y la textura de la superficie permiten un excelente rendimiento
+                                    en
+                                    entornos con poca luz.</li>
+                                <li>Certificado para soportar: carga de viento (2400 Pascal) y carga de nieve (5400
+                                    Pascal).
+                                </li>
+                                <li>Alta resistencia a la niebla salina y al amoníaco certificada por TÜV NORD</li>
+                                <li>El coeficiente de temperatura mejorado disminuye la pérdida de potencia durante
+                                    altas
+                                    temperaturas.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
+                    </div>
+                </div>
+
+                <div class="Producto">
+                    <div class="Imagen">
+                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
+                    </div>
+                    <div class="Informacion Blanco">
+                        <p class="Titulo Small">Eagle 72P</p>
+                        <p>
+                            <ul class="Caracteristicas">
+                                <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
+                                    eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
+                                    perfecta
+                                    para la instalación en el techo.</li>
+                                <li>El módulo policristalino de 72 celdas logra una potencia de salida de hasta 340 Wp.
+                                </li>
+                                <li>Los módulos Eagle pasan la prueba PID, la degradación de potencia limitada por la
+                                    prueba
+                                    PID está garantizada para la producción en masa.</li>
+                                <li>El vidrio avanzado y la textura de la superficie permiten un excelente rendimiento
+                                    en
+                                    entornos con poca luz.</li>
+                                <li>Certificado para soportar: carga de viento (2400 Pascal) y carga de nieve (5400
+                                    Pascal).
+                                </li>
+                                <li>Alta resistencia a la niebla salina y al amoníaco certificada por TÜV NORD</li>
+                                <li>El coeficiente de temperatura mejorado disminuye la pérdida de potencia durante
+                                    altas
+                                    temperaturas.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#Contacto" class="Boton Blanco TVerde">Cont&aacute;ctanos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Contenedor Mediano Contacto" id="Contacto">
+        <div class="Contenido">
+            <div class="Informacion">
+                <div class="InfoContacto">
+                    <div class="Seccion">
+                        <p class="Titulo Mediano Blanco">Contacto</p>
+
+                        <div class="DatosContacto">
+                            <p class="Datos">Direcci&oacute;n 9 calle #16</p>
+                            <p class="Datos">correo.prueba@svgreenpower.com</p>
+                            <p class="Datos">7373 - 7373</p>
+                            <div class="Social">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="Assets/Images/Social/face4.svg" alt="">
+                                </a>
+
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="Assets/Images/Social/insta4.svg" alt="">
+                                </a>
+
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <img src="Assets/Images/Social/twitter4.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Seccion">
+                        <p class="Titulo Mediano Blanco">Env&iacute;anos un E-mail</p>
+
+                        <div class="Formulario FormContacto">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Telefono">
+                            <input type="text" placeholder="E-mail">
+                            <textarea cols="30" rows="10" placeholder="Envianos un mensaje..."></textarea>
+                        </div>
+
+                        <a href="" class="Boton Blanco TNegro FormSeccion">Enviar</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
