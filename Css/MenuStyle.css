@@ -20,10 +20,84 @@
     justify-content: center;
 }
 
+.NavBar .MenuLogo2 {
+    display: none;
+    transform: translateX(5px);
+}
+
 .NavBar .MenuLogo {
     display: block;
+    transform: translateX(25px);
+}
+
+.NavBar .MenuLogo, .NavBar .MenuLogo2 {
     float: left;
     height: 60px;
     padding: 8px;
-    transform: translateX(25px);
+}
+
+.NavBar .SlideBtn {
+    display: none;
+}
+
+.OpcionesMovil {
+    display: none;
+}
+
+/*This modifies the toggle content*/
+.SlideContent {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .NavBar .SlideBtn {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 50px;
+        padding: 8px;
+        margin: 5px;
+        transform: translateX(-15px);
+        background-color: transparent;
+        border: none;
+    }
+
+    .SlideBtn span {
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transform: translateY(-5px);
+    }
+
+    .SlideContent {
+        display: none;
+        float: right;
+        width: 100%;
+        border-bottom: 1px solid #cfd8dc;
+    }
+
+    .SlideContent a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .NavBar .MenuLogo2 {
+        display: block;
+    }
+    
+    .NavBar .MenuLogo {
+        display: none;
+    }
+
+    .OpcionesMovil {
+        display: block;
+    }
+
+    .OpcionesNormal {
+        display: none;
+    }
 }

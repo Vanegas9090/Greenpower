@@ -19,6 +19,15 @@
     width: 50%;
     height: auto;
     transform: translateY(-100px);
+    opacity: 0;
+}
+
+.Logo2 {
+    width: 45%;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
 }
 
 /*CONTENEDORES*/
@@ -47,7 +56,11 @@
     align-items: center;
 }
 
-.Contenido, .Contenido2, .Producto, .InfoContacto, .Social {
+.Contenido,
+.Contenido2,
+.Producto,
+.InfoContacto,
+.Social {
     position: relative;
     width: 100%;
     display: flex;
@@ -79,19 +92,21 @@
     color: white;
 }
 
-.Producto, .InfoContacto {
+.Producto,
+.InfoContacto {
     position: relative;
     min-height: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.Producto .Imagen, .Producto .Informacion {
+.Producto .Imagen,
+.Producto .Informacion {
     min-height: 300px;
 }
 
 .Producto .Imagen {
-    text-align: center; 
+    text-align: center;
     width: 40%;
 }
 
@@ -104,6 +119,10 @@
 .Producto .Informacion {
     text-align: left;
     width: 60%;
+}
+
+.Producto .Informacion .Caracteristicas li {
+    margin-bottom: 25px;
 }
 
 .Producto .Informacion .Caracteristicas {
@@ -124,6 +143,7 @@
     min-width: 225px;
     max-width: 250px;
     height: 225px;
+    border: 2px solid white;
 }
 
 .Proyecto:hover .Info {
@@ -131,13 +151,14 @@
     cursor: default;
 }
 
-.Proyecto > .Info, .Proyecto > img {
+.Proyecto>.Info,
+.Proyecto>img {
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-.Proyecto > .Info {
+.Proyecto>.Info {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
@@ -149,24 +170,24 @@
     transition: opacity 1s;
 }
 
-.Proyecto > .Info p {
+.Proyecto>.Info p {
     margin: 10px;
 }
 
-.Proyecto > .Info p.NombreProy {
+.Proyecto>.Info p.NombreProy {
     font-size: 1.8vw;
 }
 
-.Proyecto > .Info p.DescProy {
-    font-size: 1.4  vw;
+.Proyecto>.Info p.DescProy {
+    font-size: 1.4 vw;
 }
 
 /*contenedores individuales*/
-.Contenedor.Grande > .Contenido {
+.Contenedor.Grande>.Contenido {
     min-height: 700px;
 }
 
-.Contenedor.Mediano > .Contenido {
+.Contenedor.Mediano>.Contenido {
     min-height: 400px;
 }
 
@@ -222,7 +243,8 @@
     font-size: 2.5vw;
 }
 
-.Titulo.Small, .Datos {
+.Titulo.Small,
+.Datos {
     font-size: 1.8vw;
 }
 
@@ -239,7 +261,8 @@
 }
 
 /*FORMULARIOS*/
-.DatosContacto, .Formulario {
+.DatosContacto,
+.Formulario {
     margin: auto;
     display: block;
     height: auto;
@@ -247,7 +270,8 @@
     padding: 25px;
 }
 
-.Formulario.Calculadora input, .Formulario.Calculadora select {
+.Formulario.Calculadora input,
+.Formulario.Calculadora select {
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -258,30 +282,34 @@
     margin-bottom: 25px;
 }
 
-.Formulario input[type="text"], textarea {
+.Formulario input[type="text"],
+textarea {
     width: 100%;
     padding: 10px;
 }
 
 .Formulario.Calculadora select {
     width: 100%;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
-	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-	background-repeat: no-repeat, repeat;
-	background-position: right .7em top 50%, 0 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
     padding: 10px 25px;
 }
 
-.Formulario.Calculadora select, .Formulario input[type="text"], textarea {
+.Formulario.Calculadora select,
+.Formulario input[type="text"],
+textarea {
     background-color: white;
     border: none;
     font-size: 1.3vw;
 }
 
-.Formulario.FormContacto input[type="text"], .Formulario.FormContacto textarea {
+.Formulario.FormContacto input[type="text"],
+.Formulario.FormContacto textarea {
     margin-bottom: 15px;
 }
 
@@ -349,6 +377,11 @@ textarea {
     border: 2px solid white;
 }
 
+.Hideme,
+.HidemeBefore {
+    opacity: 0;
+}
+
 /*LOADER*/
 .loading {
     position: fixed;
@@ -390,5 +423,190 @@ textarea {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .InfoContacto .Seccion {
+        width: 100%;
+    }
+
+    .Producto .Informacion .Caracteristicas {
+        font-size: 2.3vw;
+    }
+
+    .Producto {
+        margin-bottom: 10px;
+    }
+
+    .Producto .Informacion .Caracteristicas li {
+        margin-bottom: 20px;
+    }
+
+    .Informacion {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .Proyecto {
+        position: relative;
+        width: 100%;
+        min-width: 175px;
+        max-width: 300px;
+        height: 225px;
+    }
+
+    .Formulario.Calculadora {
+        width: 80%;
+    }
+
+    .Formulario.Calculadora select,
+    .Formulario input[type="text"],
+    textarea {
+        font-size: 3vw;
+    }
+
+    .Formulario.Calculadora input,
+    .Formulario.Calculadora select {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .MainLogo {
+        width: 70%;
+    }
+
+    .Titulo.Grande {
+        font-size: 4.5vw;
+    }
+
+    .Titulo.Mediano {
+        font-size: 3.5vw;
+    }
+
+    .Titulo.Small,
+    .Datos {
+        font-size: 2.8vw;
+    }
+
+    .Boton {
+        width: 35%;
+        padding: 15px 25px;
+        font-size: 2.3vw;
+    }
+
+    .Proyecto>.Info p.NombreProy {
+        font-size: 3.8vw;
+    }
+    
+    .Proyecto>.Info p.DescProy {
+        font-size: 3.4 vw;
+    }
+
+    .Social {
+        justify-content: center;
+    }
+
+    .InfoContacto .DatosContacto {
+        text-align: center;
+    }
+
+    .InfoContacto {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .Producto {
+        flex-direction: column;
+    }
+
+    .Producto .Informacion .Caracteristicas {
+        text-align: justify;
+        list-style: none;
+    }
+
+    .Producto .Informacion .Caracteristicas li {
+        font-size: 4vw;
+    }
+
+    .Producto .Imagen img {
+        width: 40%;
+    }
+
+    .Producto .Imagen, .Producto .Informacion {
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .MainLogo {
+        width: 80%;
+    }
+
+    .Titulo.Justificado {
+        text-align: justify;
+    }
+
+    .Titulo.Grande {
+        font-size: 6.5vw;
+    }
+
+    .Titulo.Mediano {
+        font-size: 5.5vw;
+    }
+
+    .Titulo.Small,
+    .Datos {
+        font-size: 4.8vw;
+    }
+
+    .Separador {
+        width: 8%;
+    }
+
+    .Separador.Blanco {
+        border: 1px solid white;
+    }
+
+    .Formulario.Calculadora {
+        border: 1px solid white;
+        width: 100%;
+    }
+
+    .DatosContacto,
+    .Formulario {
+        padding: 10px;
+    }
+
+    .Boton {
+        width: 50%;
+        padding: 15px 25px;
+        font-size: 3.3vw;
+    }
+
+    .Logo2 {
+        width: 70%;
+    }
+
+    .Proyecto {
+        position: relative;
+        width: 100%;
+        min-width: 225px;
+        max-width: 350px;
+        height: 275px;
+        margin-bottom: 5px;
+    }
+
+    .Proyecto>.Info p.NombreProy {
+        font-size: 4.8vw;
+    }
+    
+    .Proyecto>.Info p.DescProy {
+        font-size: 3.4 vw;
     }
 }

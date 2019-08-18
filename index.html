@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="Css/MenuStyle.css">
     <script src="Js/Jquery.js"></script>
     <script src="Js/Functions.js"></script>
+    <script src="Js/Menu.js"></script>
 </head>
 
-<body ondragstart="return false;" onload="loading(event);">
+<body ondragstart="return false;" onload="loading(event); LogoAppears();">
     <div id="loading" class="loading">
         <div class="loader"></div>
     </div>
@@ -25,22 +26,43 @@
         <div id="NavBar" class="NavBar">
             <ul>
                 <li>
-                    <img src="Assets/Images/Imagen.png" class="MenuLogo">
+                    <img src="Assets/Images/Logos/Imagen.png" class="MenuLogo">
+                    <img src="Assets/Images/Logos/Green-Power-Logo-White.svg" class="MenuLogo2">
+
+                    <button class="SlideBtn" onclick="toggleMenu();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
 
                     <ul class="SlideContent">
-                        <li><a href="#Contacto" class="Option">Contacto</a></li>
-                        <li><a href="#Servicios" class="Option">Servicios</a></li>
-                        <li><a href="#Productos" class="Option">Productos</a></li>
-                        <li><a href="#Proyectos" class="Option">Proyectos</a></li>
-                        <li><a href="#Nosotros" class="Option">¿Qui&eacute;nes somos?</a></li>
-                        <li><a href="#Inicio" class="Option">Inicio</a></li>
+                        <div class="OpcionesNormal">
+
+                            <li><a href="#Contacto" class="Option">Contacto</a></li>
+                            <li><a href="#Servicios" class="Option">Servicios</a></li>
+                            <li><a href="#Productos" class="Option">Productos</a></li>
+                            <li><a href="#Proyectos" class="Option">Proyectos</a></li>
+                            <li><a href="#Nosotros" class="Option">¿Qui&eacute;nes somos?</a>
+                            </li>
+                            <li><a href="#Inicio" class="Option">Inicio</a></li>
+                        </div>
+
+                        <div class="OpcionesMovil">
+                            <li><a href="#Inicio" class="Option" onclick="toggleMenu();">Inicio</a></li>
+                            <li><a href="#Nosotros" class="Option" onclick="toggleMenu();">¿Qui&eacute;nes somos?</a>
+                            </li>
+                            <li><a href="#Proyectos" class="Option" onclick="toggleMenu();">Proyectos</a></li>
+                            <li><a href="#Contacto" class="Option" onclick="toggleMenu();">Contacto</a></li>
+                            <li><a href="#Servicios" class="Option" onclick="toggleMenu();">Servicios</a></li>
+                            <li><a href="#Productos" class="Option" onclick="toggleMenu();">Productos</a></li>
+                        </div>
                     </ul>
                 </li>
             </ul>
         </div>
 
-        <div class="Contenido">
-            <img src="Assets/Images/Logos/Green-Power-Logo-White.svg" class="MainLogo">
+        <div class="Contenido" onclick="toggleMenuOutside();">
+            <img src="Assets/Images/Logos/Green-Power-Logo-White.svg" class="MainLogo" id="MainLogo">
         </div>
     </div>
 
@@ -96,19 +118,19 @@
 
         <div class="Contenido">
             <div class="Informacion">
-                <p class="Titulo Mediano Blanco Centro">
+                <p class="Titulo Mediano Blanco Centro Hideme">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
 
-                <hr class="Separador Blanco">
+                <hr class="Separador Blanco Hideme">
 
-                <p class="Titulo Small Blanco Centro">
+                <p class="Titulo Small Blanco Centro Hideme Justificado">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
                     laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
                     voluptatem quas quo.
                 </p>
 
-                <a href="#Contacto" class="Boton Blanco TNegro">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Blanco TNegro Hideme">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -116,12 +138,14 @@
     <div class="Contenedor Mediano Proyectos" id="Proyectos">
         <div class="Contenido">
             <div class="Informacion">
-                <p class="Titulo Grande Verde Centro">
+                <!--<p class="Titulo Grande Verde Centro">
                     Nuestros Proyectos
-                </p>
+                </p>-->
+
+                <img src="Assets/Images/Logos/Green-Power-Logo.svg" class="Logo2 Hideme">
 
                 <div class="Contenido2 Proyectos">
-                    <div class="Proyecto">
+                    <div class="Proyecto Hideme">
                         <img src="Assets/Images/Proyectos/proyecto1.jpg" alt="">
                         <div class="Info">
                             <p class="NombreProy">Nombre Proyecto</p>
@@ -132,7 +156,7 @@
                         </div>
                     </div>
 
-                    <div class="Proyecto">
+                    <div class="Proyecto Hideme">
                         <img src="Assets/Images/Proyectos/proyecto2.jpg" alt="">
                         <div class="Info">
                             <p class="NombreProy">Nombre Proyecto</p>
@@ -143,7 +167,7 @@
                         </div>
                     </div>
 
-                    <div class="Proyecto">
+                    <div class="Proyecto Hideme">
                         <img src="Assets/Images/Proyectos/proyecto3.jpg" alt="">
                         <div class="Info">
                             <p class="NombreProy">Nombre Proyecto</p>
@@ -154,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="Proyecto">
+                    <div class="Proyecto Hideme">
                         <img src="Assets/Images/Proyectos/proyecto4.jpg" alt="">
                         <div class="Info">
                             <p class="NombreProy">Nombre Proyecto</p>
@@ -166,13 +190,13 @@
                     </div>
                 </div>
 
-                <p class="Titulo Small Verde Centro">
+                <p class="Titulo Small Verde Centro Hideme Justificado">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
                     laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
                     voluptatem quas quo.
                 </p>
 
-                <a href="#Contacto" class="Boton Verde TBlanco">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Verde TBlanco Hideme">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -184,52 +208,14 @@
                     Nuestros Productos
                 </p>
 
-                <p class="Titulo Small Verde Centro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
-                    laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
-                    voluptatem quas quo.
-                </p>
-
                 <div class="Producto">
-                    <div class="Informacion Verde">
-                        <p class="Titulo Small">Eagle 72P</p>
-                        <p>
-                            <ul class="Caracteristicas">
-                                <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
-                                    eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
-                                    perfecta
-                                    para la instalación en el techo.</li>
-                                <li>El módulo policristalino de 72 celdas logra una potencia de salida de hasta 340 Wp.
-                                </li>
-                                <li>Los módulos Eagle pasan la prueba PID, la degradación de potencia limitada por la
-                                    prueba
-                                    PID está garantizada para la producción en masa.</li>
-                                <li>El vidrio avanzado y la textura de la superficie permiten un excelente rendimiento
-                                    en
-                                    entornos con poca luz.</li>
-                                <li>Certificado para soportar: carga de viento (2400 Pascal) y carga de nieve (5400
-                                    Pascal).
-                                </li>
-                                <li>Alta resistencia a la niebla salina y al amoníaco certificada por TÜV NORD</li>
-                                <li>El coeficiente de temperatura mejorado disminuye la pérdida de potencia durante
-                                    altas
-                                    temperaturas.</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="Imagen">
-                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
-                    </div>
-                </div>
-
-                <div class="Producto">
-                    <div class="Imagen">
+                    <div class="Imagen HidemeBefore">
                         <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
                     </div>
                     <div class="Informacion Verde">
-                        <p class="Titulo Small">Eagle 72P</p>
+                        <p class="Titulo Mediano Hideme">Eagle 72P</p>
                         <p>
-                            <ul class="Caracteristicas">
+                            <ul class="Caracteristicas HidemeBefore">
                                 <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
                                     eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
                                     perfecta
@@ -254,7 +240,39 @@
                     </div>
                 </div>
 
-                <a href="#Contacto" class="Boton Verde TBlanco">Cont&aacute;ctanos</a>
+                <div class="Producto">
+                    <div class="Imagen HidemeBefore">
+                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
+                    </div>
+                    <div class="Informacion Verde">
+                        <p class="Titulo Mediano Hideme">Eagle 72P</p>
+                        <p>
+                            <ul class="Caracteristicas HidemeBefore">
+                                <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
+                                    eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
+                                    perfecta
+                                    para la instalación en el techo.</li>
+                                <li>El módulo policristalino de 72 celdas logra una potencia de salida de hasta 340 Wp.
+                                </li>
+                                <li>Los módulos Eagle pasan la prueba PID, la degradación de potencia limitada por la
+                                    prueba
+                                    PID está garantizada para la producción en masa.</li>
+                                <li>El vidrio avanzado y la textura de la superficie permiten un excelente rendimiento
+                                    en
+                                    entornos con poca luz.</li>
+                                <li>Certificado para soportar: carga de viento (2400 Pascal) y carga de nieve (5400
+                                    Pascal).
+                                </li>
+                                <li>Alta resistencia a la niebla salina y al amoníaco certificada por TÜV NORD</li>
+                                <li>El coeficiente de temperatura mejorado disminuye la pérdida de potencia durante
+                                    altas
+                                    temperaturas.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#Contacto" class="Boton Verde TBlanco Hideme">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -266,17 +284,11 @@
                     Nuestros Servicios
                 </p>
 
-                <p class="Titulo Small Blanco Centro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo voluptate dolor? Ex beatae veritatis
-                    laudantium animi corporis incidunt, consequuntur quae tenetur alias totam magni impedit vel
-                    voluptatem quas quo.
-                </p>
-
                 <div class="Producto">
                     <div class="Informacion Blanco">
-                        <p class="Titulo Small">Eagle 72P</p>
+                        <p class="Titulo Mediano Hideme">Eagle 72P</p>
                         <p>
-                            <ul class="Caracteristicas">
+                            <ul class="Caracteristicas HidemeBefore">
                                 <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
                                     eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
                                     perfecta
@@ -299,19 +311,16 @@
                             </ul>
                         </p>
                     </div>
-                    <div class="Imagen">
+                    <div class="Imagen HidemeBefore">
                         <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
                     </div>
                 </div>
 
                 <div class="Producto">
-                    <div class="Imagen">
-                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
-                    </div>
                     <div class="Informacion Blanco">
-                        <p class="Titulo Small">Eagle 72P</p>
+                        <p class="Titulo Mediano Hideme">Eagle 72P</p>
                         <p>
-                            <ul class="Caracteristicas">
+                            <ul class="Caracteristicas HidemeBefore">
                                 <li>La celda solar de 5 barras colectoras adopta una nueva tecnología para mejorar la
                                     eficiencia de los módulos, ofrece una mejor apariencia estética, por lo que es
                                     perfecta
@@ -334,9 +343,12 @@
                             </ul>
                         </p>
                     </div>
+                    <div class="Imagen HidemeBefore">
+                        <img src="Assets/Images/Productos/Eagle_72P.png" alt="">
+                    </div>
                 </div>
 
-                <a href="#Contacto" class="Boton Blanco TVerde">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Blanco TVerde Hideme">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -348,7 +360,7 @@
                     <div class="Seccion">
                         <p class="Titulo Mediano Blanco">Contacto</p>
 
-                        <div class="DatosContacto">
+                        <div class="DatosContacto HidemeBefore">
                             <p class="Datos">Direcci&oacute;n 9 calle #16</p>
                             <p class="Datos">correo.prueba@svgreenpower.com</p>
                             <p class="Datos">7373 - 7373</p>
@@ -371,14 +383,14 @@
                     <div class="Seccion">
                         <p class="Titulo Mediano Blanco">Env&iacute;anos un E-mail</p>
 
-                        <div class="Formulario FormContacto">
+                        <div class="Formulario FormContacto HidemeBefore">
                             <input type="text" placeholder="Nombre">
                             <input type="text" placeholder="Telefono">
                             <input type="text" placeholder="E-mail">
                             <textarea cols="30" rows="10" placeholder="Envianos un mensaje..."></textarea>
                         </div>
 
-                        <a href="" class="Boton Blanco TNegro FormSeccion">Enviar</a>
+                        <a href="" class="Boton Blanco TNegro FormSeccion HidemeBefore">Enviar</a>
                     </div>
                 </div>
             </div>
