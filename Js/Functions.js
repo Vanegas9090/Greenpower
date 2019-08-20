@@ -1,6 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function (event) {
+  $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash != "") {
@@ -14,25 +14,14 @@ $(document).ready(function () {
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body, div').animate({
         scrollTop: $(hash).offset().top
-      }, 1000, function () {
-
+      }, 800, function(){
+   
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-});
 
-function loading(evento) {
-  $("#loading").fadeOut();
-  $("#loading").fadeOut("slow");
-  $("#loading").fadeOut(3000, function () {
-    document.getElementById("loading").style.display = "none";
-  });
-  //
-}
-
-$(document).ready(function () {
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
     /* Check the location of each desired element */
@@ -63,6 +52,15 @@ $(document).ready(function () {
   });
 });
 
+function loading(evento) {
+  $("#loading").fadeOut();
+  $("#loading").fadeOut("slow");
+  $("#loading").fadeOut(3000, function () {
+    document.getElementById("loading").style.display = "none";
+  });
+  //
+}
+
 function LogoAppears() {
   var bottom_of_object = $('#MainLogo').offset().top + $('#MainLogo').outerHeight();
   var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -74,3 +72,15 @@ function LogoAppears() {
     }, 1500);
   }
 }
+
+function toggleMenu() {
+  var target = $('.SlideBtn').parent().children(".SlideContent");
+  $(target).slideToggle();
+}
+
+function toggleMenuOutside() {
+  if ($('.SlideContent').css('display') == 'block' && $('.MenuLogo2').css('display') == 'block') {
+      // Acción si el elemento no es visible
+      toggleMenu();
+  }
+} 

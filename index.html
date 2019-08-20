@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="Css/MenuStyle.css">
     <script src="Js/Jquery.js"></script>
     <script src="Js/Functions.js"></script>
-    <script src="Js/Menu.js"></script>
 </head>
 
 <body ondragstart="return false;" onload="loading(event); LogoAppears();">
@@ -48,13 +47,13 @@
                         </div>
 
                         <div class="OpcionesMovil">
-                            <li><a href="#Inicio" class="Option" onclick="toggleMenu();">Inicio</a></li>
-                            <li><a href="#Nosotros" class="Option" onclick="toggleMenu();">¿Qui&eacute;nes somos?</a>
+                            <li><a href="#Inicio" class="Option">Inicio</a></li>
+                            <li><a href="#Nosotros" class="Option">¿Qui&eacute;nes somos?</a>
                             </li>
-                            <li><a href="#Proyectos" class="Option" onclick="toggleMenu();">Proyectos</a></li>
-                            <li><a href="#Contacto" class="Option" onclick="toggleMenu();">Contacto</a></li>
-                            <li><a href="#Servicios" class="Option" onclick="toggleMenu();">Servicios</a></li>
-                            <li><a href="#Productos" class="Option" onclick="toggleMenu();">Productos</a></li>
+                            <li><a href="#Proyectos" class="Option">Proyectos</a></li>
+                            <li><a href="#Servicios" class="Option">Servicios</a></li>
+                            <li><a href="#Productos" class="Option">Productos</a></li>
+                            <li><a href="#Contacto" class="Option">Contacto</a></li>
                         </div>
                     </ul>
                 </li>
@@ -130,7 +129,7 @@
                     voluptatem quas quo.
                 </p>
 
-                <a href="#Contacto" class="Boton Blanco TNegro Hideme">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Blanco TNegro Hideme" onclick="smoothScroll(event, this);">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -196,7 +195,7 @@
                     voluptatem quas quo.
                 </p>
 
-                <a href="#Contacto" class="Boton Verde TBlanco Hideme">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Verde TBlanco Hideme" onclick="smoothScroll(event, this);">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -272,7 +271,7 @@
                     </div>
                 </div>
 
-                <a href="#Contacto" class="Boton Verde TBlanco Hideme">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Verde TBlanco Hideme" onclick="smoothScroll(event, this);">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -348,7 +347,7 @@
                     </div>
                 </div>
 
-                <a href="#Contacto" class="Boton Blanco TVerde Hideme">Cont&aacute;ctanos</a>
+                <a href="#Contacto" class="Boton Blanco TVerde Hideme" onclick="smoothScroll(event, this);">Cont&aacute;ctanos</a>
             </div>
         </div>
     </div>
@@ -361,19 +360,18 @@
                         <p class="Titulo Mediano Blanco">Contacto</p>
 
                         <div class="DatosContacto HidemeBefore">
-                            <p class="Datos">Direcci&oacute;n 9 calle #16</p>
-                            <p class="Datos">correo.prueba@svgreenpower.com</p>
-                            <p class="Datos">7373 - 7373</p>
+                            <p class="Datos">E-Mail:</p>
+                            <p class="Datos"><u>info@svgreenpower.com</u></p>
                             <div class="Social">
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/SV-Green-Power-109963520344023" target="_blank">
                                     <img src="Assets/Images/Social/face4.svg" alt="">
                                 </a>
 
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/svgreenpower/" target="_blank">
                                     <img src="Assets/Images/Social/insta4.svg" alt="">
                                 </a>
 
-                                <a href="https://www.twitter.com/" target="_blank">
+                                <a href="https://twitter.com/GreenPo87750567" target="_blank">
                                     <img src="Assets/Images/Social/twitter4.svg" alt="">
                                 </a>
                             </div>
