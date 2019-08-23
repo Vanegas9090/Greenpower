@@ -101,3 +101,20 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 650) {
+
+    .NavBar .SlideBtn {
+        transform: translateX(0px);
+    }
+
+    .SlideBtn span {
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transform: translateY(0px);
+    }
+}
