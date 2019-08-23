@@ -116,6 +116,11 @@
     transform: translateY(50px);
 }
 
+.Producto .Informacion .Titulo.Small {
+    margin-top: 35px !important;
+    margin-bottom: 10px !important;
+}
+
 .Producto .Informacion {
     text-align: left;
     width: 60%;
@@ -126,7 +131,8 @@
 }
 
 .Producto .Informacion .Caracteristicas {
-    font-size: 1.3vw;
+    font-size: 18px;
+    list-style: none;
 }
 
 .Producto .Informacion.Blanco {
@@ -175,11 +181,11 @@
 }
 
 .Proyecto>.Info p.NombreProy {
-    font-size: 1.6vw;
+    font-size: 20px;
 }
 
 .Proyecto>.Info p.DescProy {
-    font-size: 1.2vw;
+    font-size: 14px;
 }
 
 /*contenedores individuales*/
@@ -200,7 +206,7 @@
 }
 
 .Contenedor.Nosotros {
-    background-image: url("../Assets/Images/Fondos/paneles2.jpg");
+    background-color: rgb(0, 136, 51);
 }
 
 .Contenedor.Productos {
@@ -228,7 +234,7 @@
 
 /*TITULOS*/
 .Titulo {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .Titulo.Centro {
@@ -236,16 +242,16 @@
 }
 
 .Titulo.Grande {
-    font-size: 3.5vw;
+    font-size: 45px;
 }
 
 .Titulo.Mediano {
-    font-size: 2.5vw;
+    font-size: 30px;
 }
 
 .Titulo.Small,
 .Datos {
-    font-size: 1.8vw;
+    font-size: 25px;
 }
 
 .Titulo.Blanco {
@@ -305,7 +311,7 @@ textarea {
 textarea {
     background-color: white;
     border: none;
-    font-size: 1.3vw;
+    font-size: 20px;
 }
 
 .Formulario.FormContacto input[type="text"],
@@ -324,7 +330,7 @@ textarea {
     display: block;
     margin: auto;
     padding: 15px 25px;
-    font-size: 1.3vw;
+    font-size: 20px;
     text-decoration: none;
     -moz-transition: background-color 1s, color 1s;
     -o-transition: background-color 1s, color 1s;
@@ -432,12 +438,12 @@ textarea {
         width: 100%;
     }
 
-    .Producto .Informacion .Caracteristicas {
-        font-size: 2.3vw;
-    }
-
     .Producto {
         margin-bottom: 10px;
+    }
+
+    .Producto .Informacion .Caracteristicas {
+        font-size: 16px;
     }
 
     .Producto .Informacion .Caracteristicas li {
@@ -461,12 +467,6 @@ textarea {
         width: 80%;
     }
 
-    .Formulario.Calculadora select,
-    .Formulario input[type="text"],
-    textarea {
-        font-size: 3vw;
-    }
-
     .Formulario.Calculadora input,
     .Formulario.Calculadora select {
         margin-bottom: 10px;
@@ -478,30 +478,30 @@ textarea {
     }
 
     .Titulo.Grande {
-        font-size: 4.5vw;
+        font-size: 40px;
     }
 
     .Titulo.Mediano {
-        font-size: 3.5vw;
+        font-size: 30px;
     }
 
     .Titulo.Small,
     .Datos {
-        font-size: 2.8vw;
+        font-size: 20px;
     }
 
     .Boton {
-        width: 35%;
+        width: 25%;
         padding: 15px 25px;
-        font-size: 2.3vw;
     }
 
     .Proyecto>.Info p.NombreProy {
-        font-size: 2.6vw;
+        font-size: 20px;
+        margin-bottom: 25px;
     }
     
     .Proyecto>.Info p.DescProy {
-        font-size: 1.3vw;
+        font-size: 14px;
     }
 
     .Social {
@@ -530,10 +530,6 @@ textarea {
         list-style: none;
     }
 
-    .Producto .Informacion .Caracteristicas li {
-        font-size: 4vw;
-    }
-
     .Producto .Imagen img {
         width: 40%;
     }
@@ -553,16 +549,16 @@ textarea {
     }
 
     .Titulo.Grande {
-        font-size: 6.5vw;
+        font-size: 30px;
     }
 
     .Titulo.Mediano {
-        font-size: 5.5vw;
+        font-size: 20px;
     }
 
     .Titulo.Small,
     .Datos {
-        font-size: 4.8vw;
+        font-size: 18px;
     }
 
     .Separador {
@@ -586,7 +582,7 @@ textarea {
     .Boton {
         width: 50%;
         padding: 15px 25px;
-        font-size: 3.3vw;
+        font-size: 14px;
     }
 
     .Logo2 {
@@ -603,10 +599,24 @@ textarea {
     }
 
     .Proyecto>.Info p.NombreProy {
-        font-size: 4.8vw;
+        font-size: 20px;
     }
     
     .Proyecto>.Info p.DescProy {
-        font-size: 3.4 vw;
+        font-size: 16px;
+    }
+    
+    .Social img {
+        height: 50px;
+        width: 50px;
+        padding: 3px;
+    }
+
+    .Formulario.Calculadora select,
+    .Formulario input[type="text"],
+    textarea {
+        background-color: white;
+        border: none;
+        font-size: 16px;
     }
 }
